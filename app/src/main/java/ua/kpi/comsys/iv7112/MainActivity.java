@@ -5,10 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TabHost;
 
-
-
 public class MainActivity extends TabActivity {
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +24,5 @@ public class MainActivity extends TabActivity {
         tabSpec.setIndicator("Pictures");
         tabSpec.setContent(new Intent(this, PictureActivity.class));
         tabHost.addTab(tabSpec);
-
     }
-
 }
